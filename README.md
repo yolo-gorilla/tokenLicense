@@ -8,18 +8,24 @@ Ethereum powered standard for software licenses. Makes authentication, reselling
 
 ## Token Properties
 Tokens are minted by issuer (Bot Dev). The issuer is the owner and can define a token to have the following properties:
-Supply: How many tokens are created
-Divisible: No (no point in divisible licenses)
-Locked Supply aka Max supply: Can devs create new keys 
-Subscription time: Month / year (this is done by calculating block height) callable as this.subscription.active returns bool
-Transfer Fee: Devs can take a transfer Fee so tokens sold can pay a % to the dev automatically (optional)
-Transfer Lock: Optional Lock preventing token transfer for x amount of time 
+#### Supply: How many tokens are created
+#### Divisible: No (no point in divisible licenses)
+#### Locked Supply aka Max supply: Can devs create new keys 
+#### Subscription time: Month / year (this is done by calculating block height) callable as this.subscription.active returns bool
+#### Transfer Fee: Devs can take a transfer Fee so tokens sold can pay a % to the dev automatically (optional)
+#### Transfer Lock: Optional Lock preventing token transfer for x amount of time 
+#### Subscription Rate: This is a standard rate for payment per block time added 
+#### Subscription Payment: Contract address or identifier for base currency to use (dai, ether, usdc etc) 
 
 ## Token actions
 Tokens are :
 Transferable from party to party 
 Can be used on any ethereum compatible wallet 
 Standardized to make them compatible across different bots and to allow marketplaces to come about 
+#### activate 
+
+#### renew 
+This lets us renew a key by sending a specified amount of $$$ to the parent contract. The money sent translates to a specific number of blocks added to the subscription time. 
 
 Infrastructure needed:
 
