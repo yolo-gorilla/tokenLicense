@@ -24,3 +24,18 @@ Returns the name of the license token - e.g. "MyBot"
 OPTIONAL - This method can be used to improve usability, but interfaces and other contracts MUST NOT expect these values to be present.
 
 ```function name() public view returns (string) ```
+
+#### Symbol 
+
+Returns the symbol of the license token. E.g. “BOT”.
+OPTIONAL - This method can be used to improve usability, but interfaces and other contracts MUST NOT expect these values to be present.
+
+```function symbol() public view returns (string) ```
+
+
+### totalSupply 
+
+Returns the total token supply
+
+
+
