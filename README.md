@@ -4,9 +4,9 @@ Ethereum powered standard for software licenses. Makes authentication, reselling
 
 
 
-#Token Licenses 1.0:
+# Token Licenses 1.0:
 
-##Token Properties
+## Token Properties
 Tokens are minted by issuer (Bot Dev). The issuer is the owner and can define a token to have the following properties:
 Supply: How many tokens are created
 Divisible: No (no point in divisible licenses)
@@ -15,7 +15,7 @@ Subscription time: Month / year (this is done by calculating block height) calla
 Transfer Fee: Devs can take a transfer Fee so tokens sold can pay a % to the dev automatically (optional)
 Transfer Lock: Optional Lock preventing token transfer for x amount of time 
 
-##Token actions
+## Token actions
 Tokens are :
 Transferable from party to party 
 Can be used on any ethereum compatible wallet 
@@ -26,7 +26,7 @@ Infrastructure needed:
 Client libraries :
     Client libraries are important to allow bot developers to quickly integrate into the standard. I am a python dev so first integration will be a python library followed by a nodeJs library. This will be plug and play and allow devs to point to contract address and quickly plug into the built in auth for bots all on the network
 
-###Future integration:
+### Future integration:
 Anti crack protection 
   Client libraries can be bundled with additional anti-cracking libraries. Potential token standard improvements in the future could allow for OnChain challenges to force on chain activation.
 Open Marketplace
